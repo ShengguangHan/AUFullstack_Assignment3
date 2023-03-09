@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-user-drag: none;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.expandImages{
+  display: flex;
+  width: 100vw;
+}
+
+.image{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px;
+  flex: 0.6;
+  transition: all 800ms ease-in;
+  /* 平滑过渡的动画效果 变换的属性/变换速率/动画的执行方式 */
+}
+
+.image h3{
+  font-size: 24px;
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+  margin: 0;
+  opacity: 0;
+  /* 不透明度 */
+}
+
+.image.active{
+  flex: 5;
+}
+
+.image.active h3{
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+
+
+
+
+
